@@ -19,11 +19,8 @@ This is the official implementation of our paper [Scalable Graph Generative Mode
 <img src="assets/paradigm.png">
 
 - 🚀 Breakthrough scalability with continuous performance gains up to 60M parameters
-
 - 🔄 Novel sequence-based representation replacing traditional message passing
-
 - 🎯 Versatile performance across node, graph, and transfer learning tasks
-
 - ⚡ Optimized architecture design for maximum generalization capability
 
 
