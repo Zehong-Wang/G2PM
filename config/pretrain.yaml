@@ -1,0 +1,357 @@
+node:
+  cora:
+    split: low
+    lr: 0.0007
+    mix_aug: True
+    mask_node: 0.7
+    mask_pattern: 0.3
+
+  citeseer:
+    split: low
+    lr: 0.0005
+    mix_aug: True
+    mask_node: 0.8
+    mask_pattern: 0.7
+
+  pubmed:
+    split: low
+    lr: 0.00003
+    mix_aug: True
+    mask_node: 0.7
+    mask_pattern: 0.3
+
+  photo: 
+    split: low
+    lr: 0.00001
+    mix_aug: True
+    mask_node: 0.6
+    mask_pattern: 0.8
+
+  computers:
+    split: low
+    lr: 0.00007
+    mix_aug: True
+    mask_node: 0.2
+    mask_pattern: 0.3
+
+  wikics:
+    split: public
+    lr: 0.00001
+    mix_aug: True
+    mask_node: 0.9
+    mask_pattern: 0.9
+
+  cs:
+    split: low
+    lr: 
+    mix_aug: True
+    mask_node: 
+    mask_pattern: 
+
+  physics:
+    split: low
+    lr: 
+    mix_aug: True
+    mask_node: 
+    mask_pattern: 
+
+  arxiv:
+    split: public
+    lr: 0.0003
+    batch_size: 256
+    architecture: mae
+    loss_fn: l2
+    objective_on: emb
+    hidden_dim: 768
+    num_heads: 12
+    num_enc_layers: 3
+    num_dec_layers: 1
+    ema_alpha: 0.99
+    ema_update_every: 10
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.8 
+    dropout: 0.3
+    weight_decay: 0.05
+    grad_clip: 1.0
+    opt_beta1: 0.9
+    opt_beta2: 0.995
+    min_lr: 0.0000001
+    warmup_lr: 0.0000001
+    scheduler: cosine
+    warmup_epochs: 1
+    linear_probe_lr: 0.01
+    linear_probe_weight_decay: 0.001
+    
+  products:
+    split: public
+    lr: 0.0003
+    batch_size: 256
+    architecture: mae
+    loss_fn: l2
+    objective_on: emb
+    hidden_dim: 768
+    num_heads: 12
+    num_enc_layers: 3
+    num_dec_layers: 1
+    ema_alpha: 0.99
+    ema_update_every: 10
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.8
+    dropout: 0.3
+    weight_decay: 0.05
+    grad_clip: 1.0
+    opt_beta1: 0.9
+    opt_beta2: 0.995
+    min_lr: 0.0000001
+    warmup_lr: 0.0000001
+    scheduler: cosine
+    warmup_epochs: 1
+    linear_probe_lr: 0.01
+    linear_probe_weight_decay: 0.001
+
+  reddit:
+    split: public
+    lr: 0.0003
+    batch_size: 256
+    architecture: mae
+    loss_fn: l2
+    objective_on: emb
+    hidden_dim: 768
+    num_heads: 12
+    num_enc_layers: 3
+    num_dec_layers: 1
+    ema_alpha: 0.99
+    ema_update_every: 10
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.8 
+    dropout: 0.3
+    weight_decay: 0.05
+    grad_clip: 1.0
+    opt_beta1: 0.9
+    opt_beta2: 0.995
+    min_lr: 0.0000001
+    warmup_lr: 0.0000001
+    scheduler: cosine
+    warmup_epochs: 1
+    linear_probe_lr: 0.01
+    linear_probe_weight_decay: 0.001
+
+  cornell:
+    split: public
+    lr: 0.001
+    mix_aug: True
+    mask_node: 0.8
+    mask_pattern: 0.9
+    pattern_size: 2
+
+  texas:
+    split: public
+    lr: 0.0001
+    mix_aug: True
+    mask_node: 0.9
+    mask_pattern: 0.1
+    pattern_size: 2
+
+  wisconsin:
+    split: public
+    lr: 0.0007
+    mix_aug: True
+    mask_node: 0.8
+    mask_pattern: 0.6
+    pattern_size: 2
+    
+  actor:
+    split: public
+    lr: 0.0001
+    mix_aug: True
+    mask_node: 0.3
+    mask_pattern: 0.6
+    pattern_size: 2
+
+  chameleon:
+    split: public
+    lr: 0.0003
+    mix_aug: True
+    mask_node: 0.3
+    mask_pattern: 0.0
+
+  squirrel:
+    split: public
+    lr: 0.0001
+    mix_aug: True
+    mask_node: 0.6
+    mask_pattern: 0.0
+
+  roman:
+    split: public
+    lr: 0.0005
+    mix_aug: True
+    mask_node: 0.4
+    mask_pattern: 0.2
+    pattern_size: 2
+
+  ratings:
+    split: public
+    lr: 0.00005
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.6
+    pattern_size: 16
+
+  minesweeper:
+    split: public
+    lr: 0.0003
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.0
+    pattern_size: 2
+    
+  tolokers:
+    split: public
+    lr: 0.00005
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.1
+    pattern_size: 2
+
+  questions:
+    split: public
+    lr: 0.00007
+    mix_aug: True
+    mask_node: 0.5
+    mask_pattern: 0.4
+    pattern_size: 4
+
+  flickr:
+    split: public
+    lr: 0.00005
+    mix_aug: True
+    mask_node: 0.5
+    mask_pattern: 0.1
+    pattern_size: 6
+
+
+graph:
+  hiv:
+    split: public
+    lr: 0.00003
+    mix_aug: True
+    mask_node: 0.1
+    mask_pattern: 0.3
+    pattern_size: 8
+    weight_decay: 0.05
+    dropout: 0.3
+    opt_beta1: 0.9
+    opt_beta2: 0.99995
+    warmup_epochs: 1
+    min_lr: 0.0000001
+    warmup_lr: 0.000001
+
+  sider:
+    split: public
+    lr: 0.0001
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.7
+    pattern_size: 8
+
+  clintox:
+    split: public
+    lr: 0.00005
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.0
+    pattern_size: 4
+
+  toxcast:
+    split: public
+    lr: 0.0003
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.3
+    pattern_size: 4
+
+  tox21:
+    split: public
+    lr: 0.00003
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.0
+    pattern_size: 16
+
+  bbbp:
+    split: public
+    lr: 0.0003
+    mix_aug: True
+    mask_node: 0.9
+    mask_pattern: 0.3
+    pattern_size: 4
+
+  bace:
+    split: public
+    lr: 0.0001
+    mix_aug: True
+    mask_node: 0.1
+    mask_pattern: 0.8
+    pattern_size: 16
+
+  pcba:
+    split: public
+    lr: 0.00001
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.8
+    pattern_size: 16
+
+  muv:
+    split: public
+    lr: 0.00005
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.2
+    pattern_size: 4
+
+  imdb-b:
+    split: public
+    lr: 0.0005
+    mix_aug: True
+    mask_node: 0.3
+    mask_pattern: 0.3
+  
+  imdb-m:
+    split: public
+    lr: 0.00007
+    mix_aug: True
+    mask_node: 0
+    mask_pattern: 0.8
+    
+  collab:
+    split: public
+    lr: 0.00007
+    mix_aug: True
+    mask_node: 0.4
+    mask_pattern: 0.2
+    
+  reddit-b:
+    split: public
+    lr: 
+    mix_aug: True
+    mask_node: 
+    mask_pattern:
+  
+  reddit-m5k:
+    split: public
+    lr: 0.0001
+    mix_aug: True
+    mask_node: 0.7
+    mask_pattern: 0.1
+    
+  reddit-m12k:
+    split: public
+    lr: 0.0003
+    mix_aug: True
+    mask_node: 0.0
+    mask_pattern: 0.6
