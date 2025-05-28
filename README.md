@@ -12,7 +12,7 @@
 
 ## 📝 Description (TODO)
 
-This is the official implementation of our paper [Scalable Graph Generative Modeling via Substructure Sequences](https://arxiv.org/abs/2505.16130), the self-supervised version of our previous ICML'25 work [GPM](). G2PM uses GPM as the backbone to breakthrough the scalability issue inherent in message passing GNNs, achieving excellent scalability with larger models and more data samples. 
+This is the official implementation of our paper [Scalable Graph Generative Modeling via Substructure Sequences](https://arxiv.org/abs/2505.16130), the self-supervised version of our previous ICML'25 work [GPM](https://arxiv.org/abs/2501.18739). G2PM uses GPM as the backbone to breakthrough the scalability issue inherent in message passing GNNs, achieving excellent scalability with larger models and more data samples. 
 
 ### Key Features
 - 🔍 Direct learning from graph substructures instead of message passing
@@ -20,6 +20,7 @@ This is the official implementation of our paper [Scalable Graph Generative Mode
 
 ### Framework Overview
 
+<img src="assets/paradigm.png">
 <img src="assets/framework.png">
 
 G2PM's workflow consists of three main steps:
