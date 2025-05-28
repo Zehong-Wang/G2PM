@@ -16,13 +16,15 @@ This is the official implementation of our paper [Scalable Graph Generative Mode
 
 ### Key Features
 
-🚀 Breakthrough scalability with continuous performance gains up to 60M parameters
+<img src="assets/paradigm.png">
 
-🔄 Novel sequence-based representation replacing traditional message passing
+- 🚀 Breakthrough scalability with continuous performance gains up to 60M parameters
 
-🎯 Versatile performance across node, graph, and transfer learning tasks
+- 🔄 Novel sequence-based representation replacing traditional message passing
 
-⚡ Optimized architecture design for maximum generalization capability
+- 🎯 Versatile performance across node, graph, and transfer learning tasks
+
+- ⚡ Optimized architecture design for maximum generalization capability
 
 
 ### Background & Motivation
@@ -37,7 +39,6 @@ These issues particularly affect scalability, as increasing model size or data v
 
 ### Framework Overview
 
-<img src="assets/paradigm.png">
 <img src="assets/framework.png">
 
 G2PM introduces a generative Transformer pre-training framework that:
